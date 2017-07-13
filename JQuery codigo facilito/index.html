@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Primeros pasos en JQuery</title>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>
+	//$(function (){});  forma mas avanzada-intermedia
+/*
+	$(document).on('ready', function(){
+		$('#prueba').text('Hola mundo!!');
+		$('.prueba').html('<strong>Estoy usando JQuery</strong>');
+	});
+*/
+
+	$(document).on("ready", function(){
+		var seleccion = $(".ejem1");
+		if(seleccion.length)
+			console.log("Existen: " + seleccion.length);
+		else
+			console.log("No existe el elemento selecionado");
+
+		seleccion.not(".cl1").text('Este elemento no tienen la clase cl1');
+
+	});
+
+	</script>
+</head>
+<body>
+	<div class="ejem1 cl1">
+		<p></p>
+	</div>
+	
+	<div class="ejem1">
+		<span></span>
+	</div>
+
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	</body>
+</html>

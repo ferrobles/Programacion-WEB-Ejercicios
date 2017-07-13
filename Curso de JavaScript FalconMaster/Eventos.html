@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos</title>
+</head>
+<body>
+	<button id="boton">Boton</button>
+	<input type="text" id="input">
+
+	<script>
+		(function(){
+			var saludo = function(e){
+				console.log('Este evento es del tipo: ' + e.type);
+			}
+
+			var boton = document.getElementById('boton');
+			boton.addEventListener("focus", saludo);
+		}())
+	</script>
+
+</body>
+</html>

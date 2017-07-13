@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Tutorial JSON</h1>
+	<div id="contenedor">
+		<script type="text/javascript">
+			var nombre = ["Antonio", "Fernando", "Cesar"];
+			document.getElementById("contenedor").innerHTML = nombre[1];
+
+			var variosObjetos =[
+				{
+					"nombre":"Primer elemento",
+					"posicion":"1°"
+				},
+				{
+					"nombre":"Segundo elemento",
+					"posicion":"2°"
+				},
+				{
+					"nombre":"Tercer elemento",
+					"posicion":"3°"
+				}
+			];
+
+			document.getElementById("contenedor").innerHTML = variosObjetos[1].nombre;
+			//document.getElementById("contenedor").innerHTML = variosObjetos[1].posicion;
+		</script>
+	</div>
+</body>
+</html>

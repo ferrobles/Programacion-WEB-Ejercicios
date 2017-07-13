@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Recorrer el doumeno de HTML</title>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>
+	$(document).on("ready", function(){		
+		//Metodo Next()
+		//console.log($("#primero").next().text());
+
+		//Metodo Parent()
+		//console.log($("#test").parent().text());
+
+		//console.log($("#padre").children().attr('id'));
+
+		//console.log($("#primero").siblings());
+
+		$("ul li").each(function(index, elemento){
+			console.log("El elemento: " + $(elemento).text() + " se encuentra en la posición " + index);
+		});
+
+		$(document).html("<br>");
+		
+		var arreglo = $("#primero").siblings();
+		arreglo.each(function(index, elemento){
+			console.log("El elemento: " + $(elemento).text() + " se encuentra en la posición " + index);
+		})
+
+
+	});
+	</script>
+</head>
+<body>
+	<div>
+		<article id="padre">
+			Hey!! :D
+			<div id="test">
+				Soy el hijo
+			</div>
+		</article>
+	</div>
+	<ul>
+		<li id="primero">Soy el primero</li>
+		<li>Soy el que sigue</li>
+		<li>Soy el tercero</li>
+	</ul>
+
+</body>
+</html>

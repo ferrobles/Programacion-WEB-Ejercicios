@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Metodos utilitarios</title>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>
+	$(document).on("ready", function(){
+		$("button").on("click", function(){
+			var arreglo = ["dfsdf", "codigo facilito", "maulec", "genco"];
+			
+			//Itera en un arreglo
+			$.each(arreglo, function(index, elemento){
+				console.log("Elemento [" + index + "] value: " + elemento);
+			});
+
+			//Busca texto en un arreglo
+			if($.inArray("genco"), arreglo !== -1){
+				console.log(arreglo[$.inArray("genco", arreglo)]);
+			}
+
+			//elimina los elementos en blanco
+			var s = "                hola                  mun          do           ";
+			console.log(s);
+			console.log($.trim(s));
+			//aqui se inicia el ejercicio con git hub
+			///kbkbkbkj
+			asdsad
+		});
+	});
+	</script>
+
+	<style>
+		body {
+			background: #000;
+			color: #000;
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			display: block;
+			margin: 0 auto 50px auto;
+			width: 365px;
+		}
+
+		div {
+			background: #FFF;
+			height: 50px;
+			display: block;
+			width: 400px;
+			margin: 2px auto;
+		}
+	</style>
+	
+</head>
+<body>
+	<header>
+		<img src="img/Sylvanas.jpg" alt="CF">
+	</header><!-- /header -->
+
+	<button id="test">Ejecutar</button>
+
+	<div id="el">
+		Metodos Utilitarios
+	</div>
+</body>
+</html>

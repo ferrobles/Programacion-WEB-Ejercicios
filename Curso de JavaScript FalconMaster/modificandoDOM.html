@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document Object Model</title>
+</head>
+<body>
+	<ol id="lista">
+		<li>Primer parrafo para prueba</li>
+		<li>Segundo parrafo para prueba</li>
+	</ol>
+
+	<script>
+	var elemento = document.createElement("li"),
+		contenido = document.createTextNode("Nuevo texto");
+
+	elemento.appendChild(contenido);
+	
+	var padre = document.getElementsByTagName("li")[0].parentNode;
+	//	primerElemento = document.getElementsByTagName("li")[0];
+	//padre.insertBefore(elemento, primerElemento);
+
+
+	</script>
+</body>
+</html>

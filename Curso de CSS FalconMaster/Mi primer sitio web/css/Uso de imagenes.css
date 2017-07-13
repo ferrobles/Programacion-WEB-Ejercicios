@@ -1,0 +1,25 @@
+body {
+	background: #69247F;
+}
+
+div {
+	background: #FF40EB;
+	width: 100%;
+}
+
+img {
+	width: 300px;
+	height: auto;
+	margin: auto;
+	display: block;
+	border-radius: 20px;
+	/*border-radius: 50%;
+	box-shadow: 5px 5px 100px #000;*/
+
+	padding:10px;
+	border: 3px solid #000;
+}
+
+img:hover {
+	box-shadow: 5px 5px 100px #000;
+}

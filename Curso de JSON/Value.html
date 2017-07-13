@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Tutorial JSON</h1>
+	<div id="contenedor">
+		<script type="text/javascript">
+			var varios = {
+				"nombre": "Fernando Roobles",
+				"id":313,
+				"profesor":true,
+				"idCursos":[53,765,800],
+				"curso": {
+					"Marketing":"Mi primera aplicacion para iphone",
+					"Programacion":["Objective-C", "Xcode", "Json"]
+				},
+				"Vacaciones": null
+			}
+			alert(varios.nombre);
+			alert(varios.idCursos[1]);
+			alert(varios.curso.Marketing);
+			alert(varios.curso.Programacion[1])
+		</script>
+	</div>
+</body>
+</html>

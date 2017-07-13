@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Crear, copiar y remover elementos</title>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>
+	$(document).on("ready", function(){
+		$("button").on("click", function(){
+			$().append()
+			//$("ol li:first").appendTo("ol:first");
+			//$("ol:first").append($("ol li:first"));
+
+			//$("ol li:last").prependTo("ol:first");
+			//$("ol:first").prepend($("ol li:last"));
+
+
+			//Insert after  DESPUES
+			//$("ol li:first").insertAfter("#e1"); //<objeto><destino>
+			//$("#e1").after($("ol li:first")); //<destino><objeto>
+
+			//Insert before  ANTES
+			//$("ol li:first").insertBefore("#e1"); //<objeto><destino>
+			//$("#e1").before($("ol li:first")); //<destino><objeto>
+
+			//CLONAR ELEMENTOS
+			//var clon = $("ol li:first").clone();
+
+			//AÑADIR NUEVOS ELEMENTOS
+			//var nuevo_e = $("<p>Hola mundo</p>");
+			//$("#e1").append(nuevo_e);
+
+			//REMOVER ELEMENTOS
+			$("ol li:last()").remove();
+
+
+		})
+	});
+	</script>
+	<style>
+		body, html
+		{
+			background: #000;
+			color: #FFF;
+			margin: 0;
+			padding: 0;
+		}
+
+		header
+		{
+			display: block;
+			margin: 0 auto 50px auto;
+			width: 365px;
+		}
+
+		ol{
+			display: block;
+			width: 500px;
+			margin: auto;
+		}
+
+		ol li {
+			background: #088A29;
+			margin: 5px auto;
+			height: 30px;
+			width: 100%;
+		}
+
+		button {
+			display: block;
+			margin: 0 auto;
+			width: 80px;
+		}
+
+		div {
+			background: #FE2E64;
+			height: 50px;
+			display: block;
+			width: 400px;
+			margin: 2px auto;
+		}
+
+		img{
+
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<img src="img/Sylvanas.jpg">
+	</header><!-- /header -->
+	<ol>
+		<li>Elemento 1</li>
+		<li>Elemento 2</li>
+		<li>Elemento 3</li>
+		<li>Elemento 4</li>
+	</ol>
+	<button id="test">Ejecutar</button>
+	<div id="e1">
+		<p>Div 1</p>
+	</div>
+
+	<div id="e2">
+		<p>Div 2</p>
+	</div>
+</body>
+</html>

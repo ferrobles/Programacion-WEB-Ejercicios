@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Class Jquery</title>
+	<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+	
+	<style>
+		.test{
+			background-color: red;
+		}
+	</style>
+
+	<script>
+	$(document).on("ready", function(){
+		$(document).on("click", function(){
+		$("#test").toggleClass('test');
+		if($("#test").hasClass('test')){
+			$("#test").text("Soy de color rojo");
+		}else{
+			$("#test").text("No soy rojo");
+		}
+
+
+
+		});
+	});
+	</script>
+</head>
+<body>
+	<div id="test">Click on me</div>
+</body>
+</html>

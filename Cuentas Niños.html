@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Generador de cuentas para niños</title>
+	<link rel="stylesheet" href="">
+	
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>
+	$(document).on("ready", function(){
+		//Esto quiero que se guarde en la rama desarrallo pero no en master
+		var funcionGeneradora = function (index){
+			var elemento = $('<div class ="contenedor">'
+			+ '<p class="numGuia">' + index + '</p>' 
+			+ '<div>' + getRandomPost() + '</div>'
+			+ '<div>' + getRandomPost() + '</div>'
+			+ '<div>---------------</div>'
+			+ '<input type="text" class="resultado" value="">'
+			+ '<button>Validar</button>'
+			+ '</div>');
+
+			return elemento;
+		};
+
+
+		function getRandomPost() {
+			var randomPostID;
+		  	randomPostID = Math.floor(Math.random()*90000) + 1;
+		  	return randomPostID;
+		}
+
+		var funcionPrueba = function (){
+			var elemento = $("<p>Esto es un parrafo</p>");
+			return elemento;
+		}
+		for(i=1; i<=8; i++)
+		{
+			$(".contenedor:last()").after($(funcionGeneradora(i)));
+			//$("body").children('selector')($(funcionPrueba));
+		}
+	});
+	</script>
+
+	<style>
+		button {
+			width: 75px;
+			height: 18px;
+		}
+
+		div {
+			text-align: right;
+			font-size: 17px;
+
+		}
+		
+		.resultado {
+			text-align: right;
+			width: 80px;
+			display: block right;
+			background: transparent;
+
+		}
+
+		.contenedor {
+			display: block;
+			width: 100px;
+			border-color: green;
+			margin: 5px;
+		}
+		.numGuia {
+			text-align: center;
+			background: #ECFF14;
+			border-color: red;
+			border-width: 2px;
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor"></div>
+</body>
+</html>

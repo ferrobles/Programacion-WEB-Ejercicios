@@ -1,0 +1,29 @@
+div {
+	width: 100px;
+	height: 100px;
+	background: #067DEB;
+	color:#fff;
+	font-size: 30px;
+	float:left;
+}
+
+.caja {
+	/*
+	static, relative, absolute
+	fixed es genial
+	*/
+
+	position: static;
+	top: 100px;
+	bottom: 0;
+	right: 0;
+	left: 200px; 
+}
+/*
+.caja_padre {
+	width: 500px;
+	height: 500px;
+	background: #80235E;
+	position: relative;
+}
+*/
